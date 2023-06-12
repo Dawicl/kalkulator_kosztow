@@ -20,7 +20,7 @@ def dodaj_koszty():
     suma = suma + cena
     plik = open("lista_kosztow.txt", "w")
     for koszt in koszty:
-        plik.write(str(koszt+"\n"))
+        plik.write(str(koszt[0] + koszt[1] + "\n"))
     plik.write(str("Suma wszystkich kosztów: ", suma, "zł"))
     plik.close
 
